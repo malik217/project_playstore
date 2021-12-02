@@ -10,5 +10,6 @@ import pickle
 
 # Importing needed python scripts
 import analyze
+import train_model
+import predict_model
 
-analyze
