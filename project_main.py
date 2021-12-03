@@ -9,7 +9,6 @@ from sklearn.model_selection import train_test_split
 import pickle
 
 # Importing needed python scripts
-import analyze
-import train_model
 import predict_model
 
+predict_model.predict()
