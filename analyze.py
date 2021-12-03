@@ -52,7 +52,7 @@ Price = data_df1['Price']
 plotgraph = sns.pairplot(pd.DataFrame(list(zip(Rating, np.log(Reviews), Size, np.log(Installs), Price, Type)), 
                         columns=['Rating', 'Reviews', 'Size', 'Installs', 'Price', 'Type']), hue='Type', palette="pastel")
 
-plotgraph.savefig('TypeFree.png')
+plotgraph.savefig('diagrams/TypeFree.png')
 
 data_df2=data_clean.loc[data_clean['Type'] == 'Paid']
 
@@ -66,7 +66,7 @@ Price = data_df2['Price']
 plotgraph = sns.pairplot(pd.DataFrame(list(zip(Rating, np.log(Reviews), Size, np.log(Installs), Price, Type)), 
                         columns=['Rating', 'Reviews', 'Size', 'Installs', 'Price', 'Type']), hue='Type', palette="pastel")
 
-plotgraph.savefig('TypePaid.png')
+plotgraph.savefig('diagrams/TypePaid.png')
 """
 
 
